@@ -1,0 +1,235 @@
+EESchema Schematic File Version 4
+LIBS:vcaControl-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_POT RV1
+U 1 1 5CB3A104
+P 8300 1700
+F 0 "RV1" H 8230 1746 50  0000 R CNN
+F 1 "100k" H 8230 1655 50  0000 R CNN
+F 2 "MyModules:RV16A-41-JRL" H 8300 1700 50  0001 C CNN
+F 3 "~" H 8300 1700 50  0001 C CNN
+	1    8300 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV2
+U 1 1 5CB3A27F
+P 8300 2400
+F 0 "RV2" H 8230 2446 50  0000 R CNN
+F 1 "100k" H 8230 2355 50  0000 R CNN
+F 2 "MyModules:RV16A-41-JRL" H 8300 2400 50  0001 C CNN
+F 3 "~" H 8300 2400 50  0001 C CNN
+	1    8300 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV3
+U 1 1 5CB3B3F4
+P 8900 3350
+F 0 "RV3" H 8830 3396 50  0000 R CNN
+F 1 "50k" H 8830 3305 50  0000 R CNN
+F 2 "MyModules:RV16A-41-JRL" H 8900 3350 50  0001 C CNN
+F 3 "~" H 8900 3350 50  0001 C CNN
+	1    8900 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5CB3B457
+P 8600 3100
+F 0 "C2" V 8348 3100 50  0000 C CNN
+F 1 "10uF" V 8439 3100 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 8638 2950 50  0001 C CNN
+F 3 "~" H 8600 3100 50  0001 C CNN
+	1    8600 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8750 3100 8900 3100
+Wire Wire Line
+	8900 3100 8900 3200
+Wire Wire Line
+	9050 3350 9350 3350
+$Comp
+L keyboard_parts:GND #PWR0102
+U 1 1 5CB3B890
+P 8300 2550
+F 0 "#PWR0102" H 8300 2600 20  0001 C CNN
+F 1 "GND" H 8300 2609 30  0000 C CNN
+F 2 "" H 8300 2550 60  0000 C CNN
+F 3 "" H 8300 2550 60  0000 C CNN
+	1    8300 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:GND #PWR0103
+U 1 1 5CB3B8CE
+P 8300 1850
+F 0 "#PWR0103" H 8300 1900 20  0001 C CNN
+F 1 "GND" H 8300 1909 30  0000 C CNN
+F 2 "" H 8300 1850 60  0000 C CNN
+F 3 "" H 8300 1850 60  0000 C CNN
+	1    8300 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:GND #PWR0105
+U 1 1 5CB3BB4D
+P 8900 3600
+F 0 "#PWR0105" H 8900 3650 20  0001 C CNN
+F 1 "GND" H 8900 3659 30  0000 C CNN
+F 2 "" H 8900 3600 60  0000 C CNN
+F 3 "" H 8900 3600 60  0000 C CNN
+	1    8900 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 3500 8900 3600
+$Comp
+L Connector:AudioJack2 CV1
+U 1 1 5CB40844
+P 7950 1000
+F 0 "CV1" H 7980 1325 50  0000 C CNN
+F 1 "AudioJack2" H 7980 1234 50  0000 C CNN
+F 2 "Connector_Audio-2:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 7950 1000 50  0001 C CNN
+F 3 "~" H 7950 1000 50  0001 C CNN
+	1    7950 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2 CV2
+U 1 1 5CB42928
+P 7950 1500
+F 0 "CV2" H 7980 1825 50  0000 C CNN
+F 1 "AudioJack2" H 7980 1734 50  0000 C CNN
+F 2 "Connector_Audio-2:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 7950 1500 50  0001 C CNN
+F 3 "~" H 7950 1500 50  0001 C CNN
+	1    7950 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2 IN1
+U 1 1 5CB44A22
+P 8100 3100
+F 0 "IN1" H 8130 3425 50  0000 C CNN
+F 1 "AudioJack2" H 8130 3334 50  0000 C CNN
+F 2 "Connector_Audio-2:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 8100 3100 50  0001 C CNN
+F 3 "~" H 8100 3100 50  0001 C CNN
+	1    8100 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 3100 8450 3100
+$Comp
+L keyboard_parts:GND #PWR0111
+U 1 1 5CB452C5
+P 8350 3200
+F 0 "#PWR0111" H 8350 3250 20  0001 C CNN
+F 1 "GND" H 8350 3259 30  0000 C CNN
+F 2 "" H 8350 3200 60  0000 C CNN
+F 3 "" H 8350 3200 60  0000 C CNN
+	1    8350 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 3200 8350 3000
+Wire Wire Line
+	8350 3000 8300 3000
+$Comp
+L Connector:AudioJack2 OUT1
+U 1 1 5CB45CD2
+P 9750 1350
+F 0 "OUT1" H 9570 1425 50  0000 R CNN
+F 1 "AudioJack2" H 9570 1334 50  0000 R CNN
+F 2 "Connector_Audio-2:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 9750 1350 50  0001 C CNN
+F 3 "~" H 9750 1350 50  0001 C CNN
+	1    9750 1350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J1C1
+U 1 1 5CC6E93C
+P 9350 1350
+F 0 "J1C1" H 9270 1125 50  0000 C CNN
+F 1 "Conn_01x01" H 9270 1216 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 9350 1350 50  0001 C CNN
+F 3 "~" H 9350 1350 50  0001 C CNN
+	1    9350 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J2C1
+U 1 1 5CC70CA3
+P 8350 1000
+F 0 "J2C1" H 8430 1042 50  0000 L CNN
+F 1 "Conn_01x01" H 8430 951 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 8350 1000 50  0001 C CNN
+F 3 "~" H 8350 1000 50  0001 C CNN
+	1    8350 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J3C1
+U 1 1 5CC73F66
+P 8700 1700
+F 0 "J3C1" H 8780 1742 50  0000 L CNN
+F 1 "Conn_01x01" H 8780 1651 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 8700 1700 50  0001 C CNN
+F 3 "~" H 8700 1700 50  0001 C CNN
+	1    8700 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 1700 8450 1700
+Wire Wire Line
+	8300 1550 8300 1500
+Wire Wire Line
+	8300 1500 8150 1500
+$Comp
+L Connector_Generic:Conn_01x01 J4C1
+U 1 1 5CC7C47A
+P 8100 2250
+F 0 "J4C1" H 8020 2025 50  0000 C CNN
+F 1 "Conn_01x01" H 8020 2116 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 8100 2250 50  0001 C CNN
+F 3 "~" H 8100 2250 50  0001 C CNN
+	1    8100 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J5C1
+U 1 1 5CC7C55D
+P 8650 2400
+F 0 "J5C1" H 8730 2442 50  0000 L CNN
+F 1 "Conn_01x01" H 8730 2351 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 8650 2400 50  0001 C CNN
+F 3 "~" H 8650 2400 50  0001 C CNN
+	1    8650 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J6C1
+U 1 1 5CC7DDCB
+P 9550 3350
+F 0 "J6C1" H 9630 3392 50  0000 L CNN
+F 1 "Conn_01x01" H 9630 3301 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 9550 3350 50  0001 C CNN
+F 3 "~" H 9550 3350 50  0001 C CNN
+	1    9550 3350
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

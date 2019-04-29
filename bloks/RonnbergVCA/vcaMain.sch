@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:vca-cache
+LIBS:vcaMain-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -15,36 +15,14 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:R_POT RV1
-U 1 1 5CB3A104
-P 1800 1450
-F 0 "RV1" H 1730 1496 50  0000 R CNN
-F 1 "100k" H 1730 1405 50  0000 R CNN
-F 2 "MyModules:RV16A-41-JRL" H 1800 1450 50  0001 C CNN
-F 3 "~" H 1800 1450 50  0001 C CNN
-	1    1800 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_POT RV2
-U 1 1 5CB3A27F
-P 1400 2100
-F 0 "RV2" H 1330 2146 50  0000 R CNN
-F 1 "100k" H 1330 2055 50  0000 R CNN
-F 2 "MyModules:RV16A-41-JRL" H 1400 2100 50  0001 C CNN
-F 3 "~" H 1400 2100 50  0001 C CNN
-	1    1400 2100
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R6
 U 1 1 5CB3A334
-P 1200 1900
-F 0 "R6" V 993 1900 50  0000 C CNN
-F 1 "20k" V 1084 1900 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 1130 1900 50  0001 C CNN
-F 3 "~" H 1200 1900 50  0001 C CNN
-	1    1200 1900
+P 850 1400
+F 0 "R6" V 643 1400 50  0000 C CNN
+F 1 "20k" V 734 1400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 780 1400 50  0001 C CNN
+F 3 "~" H 850 1400 50  0001 C CNN
+	1    850  1400
 	0    1    1    0   
 $EndComp
 $Comp
@@ -81,13 +59,7 @@ F 3 "~" H 2350 2100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1350 1900 1400 1900
-Wire Wire Line
-	1400 1900 1400 1950
-Wire Wire Line
 	1550 2100 2200 2100
-Wire Wire Line
-	1950 1450 2200 1450
 Wire Wire Line
 	2500 950  2500 1450
 Wire Wire Line
@@ -189,34 +161,6 @@ Connection ~ 3100 2850
 Wire Wire Line
 	3100 2850 2400 2850
 $Comp
-L Device:R_POT RV3
-U 1 1 5CB3B3F4
-P 1650 2850
-F 0 "RV3" H 1580 2896 50  0000 R CNN
-F 1 "50k" H 1580 2805 50  0000 R CNN
-F 2 "MyModules:RV16A-41-JRL" H 1650 2850 50  0001 C CNN
-F 3 "~" H 1650 2850 50  0001 C CNN
-	1    1650 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C2
-U 1 1 5CB3B457
-P 1350 2600
-F 0 "C2" V 1098 2600 50  0000 C CNN
-F 1 "10uF" V 1189 2600 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 1388 2450 50  0001 C CNN
-F 3 "~" H 1350 2600 50  0001 C CNN
-	1    1350 2600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1500 2600 1650 2600
-Wire Wire Line
-	1650 2600 1650 2700
-Wire Wire Line
-	1800 2850 2100 2850
-$Comp
 L keyboard_parts:GND #PWR0101
 U 1 1 5CB3B7F0
 P 3100 3400
@@ -225,28 +169,6 @@ F 1 "GND" H 3100 3459 30  0000 C CNN
 F 2 "" H 3100 3400 60  0000 C CNN
 F 3 "" H 3100 3400 60  0000 C CNN
 	1    3100 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L keyboard_parts:GND #PWR0102
-U 1 1 5CB3B890
-P 1400 2250
-F 0 "#PWR0102" H 1400 2300 20  0001 C CNN
-F 1 "GND" H 1400 2309 30  0000 C CNN
-F 2 "" H 1400 2250 60  0000 C CNN
-F 3 "" H 1400 2250 60  0000 C CNN
-	1    1400 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L keyboard_parts:GND #PWR0103
-U 1 1 5CB3B8CE
-P 1800 1600
-F 0 "#PWR0103" H 1800 1650 20  0001 C CNN
-F 1 "GND" H 1800 1659 30  0000 C CNN
-F 2 "" H 1800 1600 60  0000 C CNN
-F 3 "" H 1800 1600 60  0000 C CNN
-	1    1800 1600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -264,19 +186,6 @@ Wire Wire Line
 	2850 2350 2850 2300
 Wire Wire Line
 	2850 2300 2950 2300
-$Comp
-L keyboard_parts:GND #PWR0105
-U 1 1 5CB3BB4D
-P 1650 3100
-F 0 "#PWR0105" H 1650 3150 20  0001 C CNN
-F 1 "GND" H 1650 3159 30  0000 C CNN
-F 2 "" H 1650 3100 60  0000 C CNN
-F 3 "" H 1650 3100 60  0000 C CNN
-	1    1650 3100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1650 3000 1650 3100
 $Comp
 L keyboard_parts:GND #PWR0106
 U 1 1 5CB3D8D3
@@ -371,129 +280,23 @@ F 3 "~" H 5600 2750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5450 2750 5350 2750
-$Comp
-L Connector:AudioJack2 CV1
-U 1 1 5CB40844
-P 1750 950
-F 0 "CV1" H 1780 1275 50  0000 C CNN
-F 1 "AudioJack2" H 1780 1184 50  0000 C CNN
-F 2 "Connector_Audio-2:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 1750 950 50  0001 C CNN
-F 3 "~" H 1750 950 50  0001 C CNN
-	1    1750 950 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1950 950  2200 950 
-Wire Wire Line
-	1950 850  3000 850 
-$Comp
-L keyboard_parts:GND #PWR0108
-U 1 1 5CB421BB
-P 3000 1100
-F 0 "#PWR0108" H 3000 1150 20  0001 C CNN
-F 1 "GND" H 3000 1159 30  0000 C CNN
-F 2 "" H 3000 1100 60  0000 C CNN
-F 3 "" H 3000 1100 60  0000 C CNN
-	1    3000 1100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3000 850  3000 1100
-$Comp
-L Connector:AudioJack2 CV2
-U 1 1 5CB42928
-P 1300 1300
-F 0 "CV2" H 1330 1625 50  0000 C CNN
-F 1 "AudioJack2" H 1330 1534 50  0000 C CNN
-F 2 "Connector_Audio-2:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 1300 1300 50  0001 C CNN
-F 3 "~" H 1300 1300 50  0001 C CNN
-	1    1300 1300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1500 1300 1800 1300
-$Comp
-L keyboard_parts:GND #PWR0109
-U 1 1 5CB439A5
-P 2050 1250
-F 0 "#PWR0109" H 2050 1300 20  0001 C CNN
-F 1 "GND" H 2050 1309 30  0000 C CNN
-F 2 "" H 2050 1250 60  0000 C CNN
-F 3 "" H 2050 1250 60  0000 C CNN
-	1    2050 1250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1500 1200 2050 1200
-Wire Wire Line
-	2050 1200 2050 1250
 $Comp
 L power:+12V #PWR0110
 U 1 1 5CB44155
-P 1050 1800
-F 0 "#PWR0110" H 1050 1650 50  0001 C CNN
-F 1 "+12V" H 1065 1973 50  0000 C CNN
-F 2 "" H 1050 1800 50  0001 C CNN
-F 3 "" H 1050 1800 50  0001 C CNN
-	1    1050 1800
+P 700 1300
+F 0 "#PWR0110" H 700 1150 50  0001 C CNN
+F 1 "+12V" H 715 1473 50  0000 C CNN
+F 2 "" H 700 1300 50  0001 C CNN
+F 3 "" H 700 1300 50  0001 C CNN
+	1    700  1300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1050 1900 1050 1800
-$Comp
-L Connector:AudioJack2 IN1
-U 1 1 5CB44A22
-P 850 2600
-F 0 "IN1" H 880 2925 50  0000 C CNN
-F 1 "AudioJack2" H 880 2834 50  0000 C CNN
-F 2 "Connector_Audio-2:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 850 2600 50  0001 C CNN
-F 3 "~" H 850 2600 50  0001 C CNN
-	1    850  2600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1050 2600 1200 2600
-$Comp
-L keyboard_parts:GND #PWR0111
-U 1 1 5CB452C5
-P 1100 2700
-F 0 "#PWR0111" H 1100 2750 20  0001 C CNN
-F 1 "GND" H 1100 2759 30  0000 C CNN
-F 2 "" H 1100 2700 60  0000 C CNN
-F 3 "" H 1100 2700 60  0000 C CNN
-	1    1100 2700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1100 2700 1100 2500
-Wire Wire Line
-	1100 2500 1050 2500
-$Comp
-L Connector:AudioJack2 OUT1
-U 1 1 5CB45CD2
-P 6150 2750
-F 0 "OUT1" H 5970 2825 50  0000 R CNN
-F 1 "AudioJack2" H 5970 2734 50  0000 R CNN
-F 2 "Connector_Audio-2:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 6150 2750 50  0001 C CNN
-F 3 "~" H 6150 2750 50  0001 C CNN
-	1    6150 2750
-	-1   0    0    -1  
-$EndComp
+	700  1400 700  1300
 Wire Wire Line
 	5950 2750 5750 2750
-$Comp
-L keyboard_parts:GND #PWR0112
-U 1 1 5CB46785
-P 5850 2650
-F 0 "#PWR0112" H 5850 2700 20  0001 C CNN
-F 1 "GND" H 5850 2709 30  0000 C CNN
-F 2 "" H 5850 2650 60  0000 C CNN
-F 3 "" H 5850 2650 60  0000 C CNN
-	1    5850 2650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5850 2650 5950 2650
 $Comp
 L power:+12V #PWR0113
 U 1 1 5CB4727C
@@ -507,4 +310,70 @@ F 3 "" H 3750 3200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3750 3200 3750 3050
+$Comp
+L Connector_Generic:Conn_01x01 J1M1
+U 1 1 5CC6E864
+P 6150 2750
+F 0 "J1M1" H 6230 2792 50  0000 L CNN
+F 1 "Conn_01x01" H 6230 2701 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 6150 2750 50  0001 C CNN
+F 3 "~" H 6150 2750 50  0001 C CNN
+	1    6150 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J2M1
+U 1 1 5CC70A9B
+P 1750 950
+F 0 "J2M1" H 1670 725 50  0000 C CNN
+F 1 "Conn_01x01" H 1670 816 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 1750 950 50  0001 C CNN
+F 3 "~" H 1750 950 50  0001 C CNN
+	1    1750 950 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J3M1
+U 1 1 5CC7A550
+P 2000 1450
+F 0 "J3M1" H 1920 1225 50  0000 C CNN
+F 1 "Conn_01x01" H 1920 1316 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 2000 1450 50  0001 C CNN
+F 3 "~" H 2000 1450 50  0001 C CNN
+	1    2000 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J4M1
+U 1 1 5CC7C2A0
+P 1200 1400
+F 0 "J4M1" H 1280 1442 50  0000 L CNN
+F 1 "Conn_01x01" H 1280 1351 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 1200 1400 50  0001 C CNN
+F 3 "~" H 1200 1400 50  0001 C CNN
+	1    1200 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J5M1
+U 1 1 5CC7C318
+P 1350 2100
+F 0 "J5M1" H 1270 1875 50  0000 C CNN
+F 1 "Conn_01x01" H 1270 1966 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 1350 2100 50  0001 C CNN
+F 3 "~" H 1350 2100 50  0001 C CNN
+	1    1350 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J6M1
+U 1 1 5CC7DF55
+P 1900 2850
+F 0 "J6M1" H 1820 2625 50  0000 C CNN
+F 1 "Conn_01x01" H 1820 2716 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 1900 2850 50  0001 C CNN
+F 3 "~" H 1900 2850 50  0001 C CNN
+	1    1900 2850
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
