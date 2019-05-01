@@ -1,0 +1,510 @@
+EESchema Schematic File Version 4
+LIBS:vca-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_POT RV1
+U 1 1 5CB3A104
+P 1800 1450
+F 0 "RV1" H 1730 1496 50  0000 R CNN
+F 1 "100k" H 1730 1405 50  0000 R CNN
+F 2 "MyModules:RV16A-41-JRL" H 1800 1450 50  0001 C CNN
+F 3 "~" H 1800 1450 50  0001 C CNN
+	1    1800 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV2
+U 1 1 5CB3A27F
+P 1400 2100
+F 0 "RV2" H 1330 2146 50  0000 R CNN
+F 1 "100k" H 1330 2055 50  0000 R CNN
+F 2 "MyModules:RV16A-41-JRL" H 1400 2100 50  0001 C CNN
+F 3 "~" H 1400 2100 50  0001 C CNN
+	1    1400 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5CB3A334
+P 1200 1900
+F 0 "R6" V 993 1900 50  0000 C CNN
+F 1 "20k" V 1084 1900 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 1130 1900 50  0001 C CNN
+F 3 "~" H 1200 1900 50  0001 C CNN
+	1    1200 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5CB3A39D
+P 2350 950
+F 0 "R1" V 2143 950 50  0000 C CNN
+F 1 "100k" V 2234 950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2280 950 50  0001 C CNN
+F 3 "~" H 2350 950 50  0001 C CNN
+	1    2350 950 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5CB3A433
+P 2350 1450
+F 0 "R2" V 2143 1450 50  0000 C CNN
+F 1 "100k" V 2234 1450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2280 1450 50  0001 C CNN
+F 3 "~" H 2350 1450 50  0001 C CNN
+	1    2350 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5CB3A471
+P 2350 2100
+F 0 "R3" V 2143 2100 50  0000 C CNN
+F 1 "100k" V 2234 2100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2280 2100 50  0001 C CNN
+F 3 "~" H 2350 2100 50  0001 C CNN
+	1    2350 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1350 1900 1400 1900
+Wire Wire Line
+	1400 1900 1400 1950
+Wire Wire Line
+	1550 2100 2200 2100
+Wire Wire Line
+	1950 1450 2200 1450
+Wire Wire Line
+	2500 950  2500 1450
+Wire Wire Line
+	2500 2100 2500 1550
+Connection ~ 2500 1450
+$Comp
+L Amplifier_Operational:TL074 U1
+U 1 1 5CB3A5E5
+P 3250 2200
+F 0 "U1" H 3250 1833 50  0000 C CNN
+F 1 "TL074" H 3250 1924 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 3200 2300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3300 2400 50  0001 C CNN
+	1    3250 2200
+	1    0    0    1   
+$EndComp
+$Comp
+L Diode:1N4148 D1
+U 1 1 5CB3A674
+P 3550 1700
+F 0 "D1" V 3504 1779 50  0000 L CNN
+F 1 "1N4148" V 3595 1779 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3550 1525 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 3550 1700 50  0001 C CNN
+	1    3550 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N4148 D2
+U 1 1 5CB3A70F
+P 4600 1700
+F 0 "D2" V 4646 1621 50  0000 R CNN
+F 1 "1N4148" V 4555 1621 50  0000 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4600 1525 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 4600 1700 50  0001 C CNN
+	1    4600 1700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3550 1550 2500 1550
+Connection ~ 2500 1550
+Wire Wire Line
+	2500 1550 2500 1450
+Wire Wire Line
+	2950 2100 2500 2100
+Connection ~ 2500 2100
+Connection ~ 3550 1550
+$Comp
+L Amplifier_Operational:CA3080 U2
+U 1 1 5CB3A893
+P 3850 2750
+F 0 "U2" H 3850 2272 50  0000 C CNN
+F 1 "CA3080" H 3850 2363 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 3850 2750 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/ca30/ca3080-a.pdf" H 3850 2850 50  0001 C CNN
+	1    3850 2750
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3550 1850 3550 2200
+Wire Wire Line
+	3550 1550 4600 1550
+Wire Wire Line
+	4600 1850 4600 3050
+Wire Wire Line
+	4600 3050 3850 3050
+Wire Wire Line
+	3550 2200 3750 2200
+Wire Wire Line
+	3750 2200 3750 2450
+Connection ~ 3550 2200
+$Comp
+L Device:R R4
+U 1 1 5CB3B0E8
+P 2250 2850
+F 0 "R4" V 2043 2850 50  0000 C CNN
+F 1 "100k" V 2134 2850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2180 2850 50  0001 C CNN
+F 3 "~" H 2250 2850 50  0001 C CNN
+	1    2250 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5CB3B1C1
+P 3100 3250
+F 0 "R5" H 3170 3296 50  0000 L CNN
+F 1 "220" H 3170 3205 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3030 3250 50  0001 C CNN
+F 3 "~" H 3100 3250 50  0001 C CNN
+	1    3100 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 2850 3100 2850
+Wire Wire Line
+	3100 3100 3100 2850
+Connection ~ 3100 2850
+Wire Wire Line
+	3100 2850 2400 2850
+$Comp
+L Device:R_POT RV3
+U 1 1 5CB3B3F4
+P 1650 2850
+F 0 "RV3" H 1580 2896 50  0000 R CNN
+F 1 "50k" H 1580 2805 50  0000 R CNN
+F 2 "MyModules:RV16A-41-JRL" H 1650 2850 50  0001 C CNN
+F 3 "~" H 1650 2850 50  0001 C CNN
+	1    1650 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5CB3B457
+P 1350 2600
+F 0 "C2" V 1098 2600 50  0000 C CNN
+F 1 "10uF" V 1189 2600 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 1388 2450 50  0001 C CNN
+F 3 "~" H 1350 2600 50  0001 C CNN
+	1    1350 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1500 2600 1650 2600
+Wire Wire Line
+	1650 2600 1650 2700
+Wire Wire Line
+	1800 2850 2100 2850
+$Comp
+L keyboard_parts:GND #PWR0101
+U 1 1 5CB3B7F0
+P 3100 3400
+F 0 "#PWR0101" H 3100 3450 20  0001 C CNN
+F 1 "GND" H 3100 3459 30  0000 C CNN
+F 2 "" H 3100 3400 60  0000 C CNN
+F 3 "" H 3100 3400 60  0000 C CNN
+	1    3100 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:GND #PWR0102
+U 1 1 5CB3B890
+P 1400 2250
+F 0 "#PWR0102" H 1400 2300 20  0001 C CNN
+F 1 "GND" H 1400 2309 30  0000 C CNN
+F 2 "" H 1400 2250 60  0000 C CNN
+F 3 "" H 1400 2250 60  0000 C CNN
+	1    1400 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:GND #PWR0103
+U 1 1 5CB3B8CE
+P 1800 1600
+F 0 "#PWR0103" H 1800 1650 20  0001 C CNN
+F 1 "GND" H 1800 1659 30  0000 C CNN
+F 2 "" H 1800 1600 60  0000 C CNN
+F 3 "" H 1800 1600 60  0000 C CNN
+	1    1800 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:GND #PWR0104
+U 1 1 5CB3B90C
+P 2850 2350
+F 0 "#PWR0104" H 2850 2400 20  0001 C CNN
+F 1 "GND" H 2850 2409 30  0000 C CNN
+F 2 "" H 2850 2350 60  0000 C CNN
+F 3 "" H 2850 2350 60  0000 C CNN
+	1    2850 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 2350 2850 2300
+Wire Wire Line
+	2850 2300 2950 2300
+$Comp
+L keyboard_parts:GND #PWR0105
+U 1 1 5CB3BB4D
+P 1650 3100
+F 0 "#PWR0105" H 1650 3150 20  0001 C CNN
+F 1 "GND" H 1650 3159 30  0000 C CNN
+F 2 "" H 1650 3100 60  0000 C CNN
+F 3 "" H 1650 3100 60  0000 C CNN
+	1    1650 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 3000 1650 3100
+$Comp
+L keyboard_parts:GND #PWR0106
+U 1 1 5CB3D8D3
+P 3550 2700
+F 0 "#PWR0106" H 3550 2750 20  0001 C CNN
+F 1 "GND" H 3550 2759 30  0000 C CNN
+F 2 "" H 3550 2700 60  0000 C CNN
+F 3 "" H 3550 2700 60  0000 C CNN
+	1    3550 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 2700 3550 2650
+$Comp
+L Amplifier_Operational:TL074 U1
+U 2 1 5CB3E1FA
+P 5050 3200
+F 0 "U1" H 5050 2833 50  0000 C CNN
+F 1 "TL074" H 5050 2924 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 5000 3300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5100 3400 50  0001 C CNN
+	2    5050 3200
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5CB3E9B5
+P 5050 2750
+F 0 "R9" V 4843 2750 50  0000 C CNN
+F 1 "560k" V 4934 2750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 4980 2750 50  0001 C CNN
+F 3 "~" H 5050 2750 50  0001 C CNN
+	1    5050 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5CB3EA4C
+P 5050 2400
+F 0 "C1" V 4798 2400 50  0000 C CNN
+F 1 "33pF" V 4889 2400 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 5088 2250 50  0001 C CNN
+F 3 "~" H 5050 2400 50  0001 C CNN
+	1    5050 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4900 2400 4650 2400
+Wire Wire Line
+	4650 2400 4650 2750
+Wire Wire Line
+	4650 2750 4900 2750
+Wire Wire Line
+	4650 2750 4650 3100
+Wire Wire Line
+	4650 3100 4750 3100
+Connection ~ 4650 2750
+Wire Wire Line
+	5200 2750 5350 2750
+Wire Wire Line
+	5350 2750 5350 3200
+Wire Wire Line
+	5200 2400 5350 2400
+Wire Wire Line
+	5350 2400 5350 2750
+Connection ~ 5350 2750
+Wire Wire Line
+	4150 2750 4650 2750
+$Comp
+L keyboard_parts:GND #PWR0107
+U 1 1 5CB3FC44
+P 4750 3400
+F 0 "#PWR0107" H 4750 3450 20  0001 C CNN
+F 1 "GND" H 4750 3459 30  0000 C CNN
+F 2 "" H 4750 3400 60  0000 C CNN
+F 3 "" H 4750 3400 60  0000 C CNN
+	1    4750 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3400 4750 3300
+$Comp
+L Device:R R10
+U 1 1 5CB400E9
+P 5600 2750
+F 0 "R10" V 5393 2750 50  0000 C CNN
+F 1 "1k" V 5484 2750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5530 2750 50  0001 C CNN
+F 3 "~" H 5600 2750 50  0001 C CNN
+	1    5600 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5450 2750 5350 2750
+$Comp
+L Connector:AudioJack2 CV1
+U 1 1 5CB40844
+P 1750 950
+F 0 "CV1" H 1780 1275 50  0000 C CNN
+F 1 "AudioJack2" H 1780 1184 50  0000 C CNN
+F 2 "Connector_Audio-2:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 1750 950 50  0001 C CNN
+F 3 "~" H 1750 950 50  0001 C CNN
+	1    1750 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 950  2200 950 
+Wire Wire Line
+	1950 850  3000 850 
+$Comp
+L keyboard_parts:GND #PWR0108
+U 1 1 5CB421BB
+P 3000 1100
+F 0 "#PWR0108" H 3000 1150 20  0001 C CNN
+F 1 "GND" H 3000 1159 30  0000 C CNN
+F 2 "" H 3000 1100 60  0000 C CNN
+F 3 "" H 3000 1100 60  0000 C CNN
+	1    3000 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 850  3000 1100
+$Comp
+L Connector:AudioJack2 CV2
+U 1 1 5CB42928
+P 1300 1300
+F 0 "CV2" H 1330 1625 50  0000 C CNN
+F 1 "AudioJack2" H 1330 1534 50  0000 C CNN
+F 2 "Connector_Audio-2:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 1300 1300 50  0001 C CNN
+F 3 "~" H 1300 1300 50  0001 C CNN
+	1    1300 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1300 1800 1300
+$Comp
+L keyboard_parts:GND #PWR0109
+U 1 1 5CB439A5
+P 2050 1250
+F 0 "#PWR0109" H 2050 1300 20  0001 C CNN
+F 1 "GND" H 2050 1309 30  0000 C CNN
+F 2 "" H 2050 1250 60  0000 C CNN
+F 3 "" H 2050 1250 60  0000 C CNN
+	1    2050 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1200 2050 1200
+Wire Wire Line
+	2050 1200 2050 1250
+$Comp
+L power:+12V #PWR0110
+U 1 1 5CB44155
+P 1050 1800
+F 0 "#PWR0110" H 1050 1650 50  0001 C CNN
+F 1 "+12V" H 1065 1973 50  0000 C CNN
+F 2 "" H 1050 1800 50  0001 C CNN
+F 3 "" H 1050 1800 50  0001 C CNN
+	1    1050 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 1900 1050 1800
+$Comp
+L Connector:AudioJack2 IN1
+U 1 1 5CB44A22
+P 850 2600
+F 0 "IN1" H 880 2925 50  0000 C CNN
+F 1 "AudioJack2" H 880 2834 50  0000 C CNN
+F 2 "Connector_Audio-2:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 850 2600 50  0001 C CNN
+F 3 "~" H 850 2600 50  0001 C CNN
+	1    850  2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 2600 1200 2600
+$Comp
+L keyboard_parts:GND #PWR0111
+U 1 1 5CB452C5
+P 1100 2700
+F 0 "#PWR0111" H 1100 2750 20  0001 C CNN
+F 1 "GND" H 1100 2759 30  0000 C CNN
+F 2 "" H 1100 2700 60  0000 C CNN
+F 3 "" H 1100 2700 60  0000 C CNN
+	1    1100 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 2700 1100 2500
+Wire Wire Line
+	1100 2500 1050 2500
+$Comp
+L Connector:AudioJack2 OUT1
+U 1 1 5CB45CD2
+P 6150 2750
+F 0 "OUT1" H 5970 2825 50  0000 R CNN
+F 1 "AudioJack2" H 5970 2734 50  0000 R CNN
+F 2 "Connector_Audio-2:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 6150 2750 50  0001 C CNN
+F 3 "~" H 6150 2750 50  0001 C CNN
+	1    6150 2750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 2750 5750 2750
+$Comp
+L keyboard_parts:GND #PWR0112
+U 1 1 5CB46785
+P 5850 2650
+F 0 "#PWR0112" H 5850 2700 20  0001 C CNN
+F 1 "GND" H 5850 2709 30  0000 C CNN
+F 2 "" H 5850 2650 60  0000 C CNN
+F 3 "" H 5850 2650 60  0000 C CNN
+	1    5850 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 2650 5950 2650
+$Comp
+L power:+12V #PWR0113
+U 1 1 5CB4727C
+P 3750 3200
+F 0 "#PWR0113" H 3750 3050 50  0001 C CNN
+F 1 "+12V" H 3765 3373 50  0000 C CNN
+F 2 "" H 3750 3200 50  0001 C CNN
+F 3 "" H 3750 3200 50  0001 C CNN
+	1    3750 3200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3750 3200 3750 3050
+$EndSCHEMATC
