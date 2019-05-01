@@ -232,4 +232,37 @@ F 3 "~" H 9550 3350 50  0001 C CNN
 	1    9550 3350
 	1    0    0    -1  
 $EndComp
+$Comp
+L keyboard_parts:GND #PWR?
+U 1 1 5CC61B5F
+P 8150 900
+F 0 "#PWR?" H 8150 950 20  0001 C CNN
+F 1 "GND" V 8150 929 30  0000 L CNN
+F 2 "" H 8150 900 60  0000 C CNN
+F 3 "" H 8150 900 60  0000 C CNN
+	1    8150 900 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:GND #PWR?
+U 1 1 5CC61BC7
+P 8150 1400
+F 0 "#PWR?" H 8150 1450 20  0001 C CNN
+F 1 "GND" V 8150 1429 30  0000 L CNN
+F 2 "" H 8150 1400 60  0000 C CNN
+F 3 "" H 8150 1400 60  0000 C CNN
+	1    8150 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L keyboard_parts:GND #PWR?
+U 1 1 5CC61C2F
+P 9550 1250
+F 0 "#PWR?" H 9550 1300 20  0001 C CNN
+F 1 "GND" V 9550 1279 30  0000 L CNN
+F 2 "" H 9550 1250 60  0000 C CNN
+F 3 "" H 9550 1250 60  0000 C CNN
+	1    9550 1250
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
