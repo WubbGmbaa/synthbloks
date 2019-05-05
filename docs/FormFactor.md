@@ -8,7 +8,7 @@ Aside from their shape, Synthbloks are based on the Eurorack standard for modula
 ## Power Rails
 - Each module is powered via the pin headers on its sides, which are also used to supply power to other modules.
 - Each pin header set consists of six male and six female pins
-- Each 6-pin header includes 12v, 5v, and GND rails
+- Each 6-pin header includes 12v, -12v, 5v, and GND rails
 - Connector pinout coming soon
 
 ### CVs, Inputs, and Outputs
