@@ -1,11 +1,14 @@
+## Project to be renamed. Suggestions appreciated.
+
 # SynthBloks
 SynthBloks are modular synthesizer modules in a fun form factor.
 
-First-party modules can be found under [bloks](../bloks).
-Technical details about the form factor (which is also called "SynthBloks") can be found [within the documentation](../docs/FormFactor.md).
-A non-comprehensive list of third-party modules will be added to the documentation as needed. Submit a pull request to add modules to the list.
+### Roadmap
+Until the first release of this form factor, the standards described here are subject to change, as issues are fixed and features are added. As part of the process involved in designing and testing the form factor, modules will be designed based on pre-existing, open-source circuits. These modules will also serve a secondary purpose as a "proof of concept" to demonstrate the format, before releasing original modules. After the first official release of the standards described here, modules will be developed from original circuits, and hosted in their own repositories.
 
 ### Development
+This repository contains documentation about the standard, as well as resources for desiging modules. Technical details about the form factor can be found [within the documentation](../docs/FormFactor.md).
+Proof-of-concept modules were previously also held here, but have since been moved to their own repository.
 You can follow the development of this project, among many others, on [Twitch](https://www.twitch.tv/wubb_gmbaa).
 
 ### Legal Stuff
