@@ -3,6 +3,8 @@ Aside from their shape, Synthbloks are based on the Eurorack standard for modula
 
 ## Physical Specifications
 - Mostly cube-shaped
+- Integrated power rails
+- Grid-like, stackable design
 - Technical details coming soon
 
 ## Power Rails
@@ -12,6 +14,6 @@ Aside from their shape, Synthbloks are based on the Eurorack standard for modula
 - Connector pinout coming soon
 
 ### CVs, Inputs, and Outputs
-Synthbloks use 3.5mm TS jacks for all external connections, with a 5V amplitude and 1V/oct, just like Eurorack. However, unlike Eurorack, which has a range from -2.5 to +2.5 V, Synthbloks are designed for 0-5V CV, outputs, and inputs.
+Synthbloks use 3.5mm TS jacks for all external connections, with a 5V amplitude and 1V/oct, just like Eurorack. ~~However, unlike Eurorack, which has a range from -2.5 to +2.5 V, Synthbloks are designed for 0-5V CV, outputs, and inputs.~~ For better compatibility, the CV range of synthblocks matches that of Eurorack.
 
 [![WubbGmbaa](http://wubbgmbaa.byethost7.com/badges/anti.png)](http://bryan.project.zone/)
